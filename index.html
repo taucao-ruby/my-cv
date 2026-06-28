@@ -13,7 +13,7 @@
     <!--========== CSS ==========-->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <title>Cao Ngọc Tàu | Principal Backend Engineer & AI Systems Architect</title>
+    <title>Cao Ngọc Tàu | Principal Systems &amp; AI Harness Engineer</title>
   </head>
   <body>
     <!--========== HEADER ==========-->
@@ -39,8 +39,8 @@
               </a>
             </li>
             <li class="nav__item">
-              <a href="#skills" class="nav__link nav__icon">
-                <i class="bx bx-receipt"></i>Skills
+              <a href="#expertise" class="nav__link nav__icon">
+                <i class="bx bx-medal"></i>Expertise
               </a>
             </li>
             <li class="nav__item">
@@ -73,7 +73,7 @@
                 <img src="assets/img/perfil.jpg" alt="Cao Ngọc Tàu" class="home__img" />
 
                 <h1 class="home__title">CAO <b>NGỌC TÀU</b></h1>
-                <h3 class="home__profession">EXPERT HARNESS ENGINEER<span class="home__profession-line2">PRINCIPAL BACKEND ARCHITECT</span></h3>
+                <h3 class="home__profession">PRINCIPAL SYSTEMS &amp; AI HARNESS ENGINEER<span class="home__profession-line2">DISTRIBUTED SYSTEMS · AI SAFETY · SECURITY</span></h3>
 
                 <!-- Button to download your CV saved in the pdf folder. Available-->
                 <div>
@@ -120,6 +120,20 @@
             <h2 class="section-title">SOCIAL</h2>
             <div class="social__container bd-grid">
               <a
+                href="https://taucao-ruby.github.io/my-portfolio/"
+                target="_blank"
+                class="social__link"
+              >
+                <i class="bx bx-globe social__icon"></i> Portfolio — taucao-ruby.github.io
+              </a>
+              <a
+                href="https://github.com/taucao-ruby"
+                target="_blank"
+                class="social__link"
+              >
+                <i class="bx bxl-github social__icon"></i> GitHub — taucao-ruby
+              </a>
+              <a
                 href="https://www.linkedin.com/in/ngoc-tau-cao-7a50961ab/"
                 target="_blank"
                 class="social__link"
@@ -141,19 +155,20 @@
             <h2 class="section-title">Profile</h2>
 
             <p class="profile__description">
-              Self-taught since 2016 (grade 10). Graduated from Passerelles Numériques
-              Vietnam in Software Engineering, then spent years rebuilding and deepening
-              expertise before returning in 2022 to build production-grade systems from
-              first principles. Pioneer in applying formal AI agent governance frameworks
-              to real-world software development — before the field had a name.
+              Self-taught engineer since 2016; graduated in Software Engineering from
+              Passerelles Numériques Vietnam, then rebuilt from first principles to ship
+              production systems under full AI-harness control. Designs for correctness
+              that is enforced by construction — not left to hope.
             </p>
             <p class="profile__description">
-              Expert Harness Engineer and Principal Backend Architect specializing in
-              concurrent system design, safety-critical API engineering, and multi-agent
-              AI governance. Built the Soleil Hostel booking system entirely under AI
-              harness control: deadlock-aware retry, Stripe-safe two-phase cancellation,
-              PostgreSQL exclusion constraints, 1,120+ tests, PHPStan Level 5 / 0 errors,
-              and 13 Architecture Decision Records — in under 4 months.
+              Works across three disciplines, each benchmarked to the engineering bar
+              that defines it: distributed-systems &amp; concurrency rigor in the spirit of
+              Google's Distinguished-Engineer standard, AI-harness safety in the spirit of
+              Anthropic's agent-safety practice, and defense-in-depth security to an
+              Apple-grade bar. The Soleil Hostel platform is the proof — a concurrent
+              booking engine with database-level no-double-booking guarantees, a 7-layer
+              AI safety pipeline, HMAC-audited governance, and 1,789 backend tests at
+              PHPStan Level 5 (0 errors).
             </p>
             <p class="profile__description">
               "Code without governance is a liability. AI without constraints is a risk.
@@ -261,37 +276,202 @@
         </div>
 
         <div class="resume__right">
-          <!--========== BACKEND & CONCURRENCY SYSTEMS ==========-->
+          <!--========== EXPERTISE PILLARS ==========-->
+          <section class="experience section" id="expertise">
+            <h2 class="section-title">ENGINEERING EXPERTISE — THREE PILLARS</h2>
+
+            <div class="experience__container bd-grid">
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">DISTRIBUTED SYSTEMS &amp; CONCURRENCY</h3>
+                  <span class="experience__company">
+                    Distinguished-Engineer caliber — Google-grade systems rigor
+                  </span>
+                  <p class="experience__description">
+                    Concurrent booking engine with zero double-booking under load: a
+                    PostgreSQL EXCLUDE overlap constraint as a database-level
+                    invariant, FOR UPDATE pessimistic locking and optimistic
+                    version checks, and TOCTOU race elimination across restore, refund and
+                    cancellation paths. Durable idempotency ledgers survive process restart
+                    and horizontal scaling. Proven by 1,789 backend tests (5,740 assertions)
+                    at PHPStan Level 5 with 0 errors and a Psalm-clean codebase.
+                  </p>
+                </div>
+              </div>
+
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                  <span class="experience__line"></span>
+                </div>
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">AI HARNESS &amp; SAFETY ENGINEERING</h3>
+                  <span class="experience__company">
+                    Anthropic-style agent-safety practice
+                  </span>
+                  <p class="experience__description">
+                    Production AI assistant governed by a 7-layer safety pipeline: instant
+                    kill switch, canary routing, human-in-the-loop proposal confirmation with
+                    proposer-binding, drift detection, and an automated eval / regression
+                    gate (ai:eval) that blocks deploys nightly. Hardened against
+                    prompt injection (AI-001) with a PII hard-block and HMAC-signed audit
+                    trails, governed by a constitutional agent framework (skill files, MCP
+                    safety constraints, four specialist subagents) with JSONL-audited,
+                    replayable verification across 30+ batch sessions at zero regressions.
+                    Code intelligence is supplied by GitNexus — an open-source knowledge-graph
+                    engine I forked, extended (PHP call-graph resolution, web-agent init,
+                    CI/test infrastructure) and wired in as the MCP layer for blast-radius
+                    analysis before every change.
+                  </p>
+                </div>
+              </div>
+
+              <div class="experience__content">
+                <div class="experience__time">
+                  <span class="experience__rounder"></span>
+                </div>
+                <div class="experience__data bd-grid">
+                  <h3 class="experience__title">SECURITY ENGINEERING</h3>
+                  <span class="experience__company">
+                    Defense-in-depth to an Apple-grade bar
+                  </span>
+                  <p class="experience__description">
+                    Defense-in-depth across the stack: Gate/Policy RBAC over three roles,
+                    fail-closed signed-webhook verification, PII redaction across every log
+                    channel and Sentry, Sanctum hardening (atomic refresh, fingerprint
+                    binding), mass-assignment lockdown, and a hardened header / CSP /
+                    rate-limit perimeter with origin pinning. Backed by an AI-specific threat
+                    model (Phases 1–4) and disciplined CVE patching (guzzle, undici, Symfony,
+                    picomatch ReDoS) — with 179 of 179 findings resolved across four audit
+                    waves.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--========== BACKEND, CONCURRENCY & DISTRIBUTED SYSTEMS ==========-->
           <section class="skills section" id="skills">
-            <h2 class="section-title">BACKEND & CONCURRENCY SYSTEMS</h2>
+            <h2 class="section-title">BACKEND, CONCURRENCY &amp; DISTRIBUTED SYSTEMS</h2>
 
             <div class="skills__content bd-grid">
               <ul class="skills__data">
                 <li class="skills__name">
-                  <span class="skills__circle"></span> Deadlock-aware retry with SQLSTATE classification
+                  <span class="skills__circle"></span> PostgreSQL EXCLUDE overlap constraints
                 </li>
                 <li class="skills__name">
-                  <span class="skills__circle"></span> Two-phase distributed transactions (Stripe-safe)
+                  <span class="skills__circle"></span> Pessimistic (FOR UPDATE) &amp; optimistic locking
                 </li>
                 <li class="skills__name">
-                  <span class="skills__circle"></span> PostgreSQL exclusion constraints & pessimistic locking
+                  <span class="skills__circle"></span> Deadlock-aware retry (SQLSTATE classification)
                 </li>
                 <li class="skills__name">
-                  <span class="skills__circle"></span> TOCTOU race condition prevention
+                  <span class="skills__circle"></span> TOCTOU race-condition elimination
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Two-phase Stripe-safe cancellation
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Durable idempotency ledgers
                 </li>
               </ul>
               <ul class="skills__data">
                 <li class="skills__name">
-                  <span class="skills__circle"></span> State machine design with transition validation
+                  <span class="skills__circle"></span> Finite state machines (deposit / payment FSM)
                 </li>
                 <li class="skills__name">
-                  <span class="skills__circle"></span> Defense-in-depth security architecture
+                  <span class="skills__circle"></span> Clean Architecture (Service + Repository)
                 </li>
                 <li class="skills__name">
-                  <span class="skills__circle"></span> RESTful API design, versioning & FormRequest validation
+                  <span class="skills__circle"></span> RESTful API &amp; OpenAPI 3.1 contracts
                 </li>
                 <li class="skills__name">
-                  <span class="skills__circle"></span> Cache strategy, warmup & N+1 elimination
+                  <span class="skills__circle"></span> Cache warmup &amp; N+1 elimination
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Redis graceful degradation
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!--========== AI HARNESS & SAFETY ENGINEERING ==========-->
+          <section class="skills section" id="ai-engineering">
+            <h2 class="section-title">AI HARNESS &amp; SAFETY ENGINEERING</h2>
+
+            <div class="skills__content bd-grid">
+              <ul class="skills__data">
+                <li class="skills__name">
+                  <span class="skills__circle"></span> 7-layer AI safety pipeline
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Kill switch + canary routing
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Human-in-the-loop proposal confirmation
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Eval &amp; regression gates (ai:eval)
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Prompt-injection defense (AI-001)
+                </li>
+              </ul>
+              <ul class="skills__data">
+                <li class="skills__name">
+                  <span class="skills__circle"></span> PII hard-block + HMAC audit trails
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> AI threat modeling (Phases 1–4)
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Constitutional governance (4 subagents)
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> OSS: GitNexus fork &amp; extension
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> MCP knowledge-graph impact analysis
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!--========== SECURITY ENGINEERING ==========-->
+          <section class="skills section" id="security">
+            <h2 class="section-title">SECURITY ENGINEERING</h2>
+
+            <div class="skills__content bd-grid">
+              <ul class="skills__data">
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Defense-in-depth RBAC (Gate/Policy)
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Fail-closed signed-webhook verification
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> PII redaction (logs + Sentry)
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Sanctum hardening (atomic refresh, fingerprint binding)
+                </li>
+              </ul>
+              <ul class="skills__data">
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Mass-assignment lockdown
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> HSTS / CSP / X-Frame + origin pinning
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Rate limiting &amp; XSS purification
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Threat modeling &amp; CVE patching discipline
                 </li>
               </ul>
             </div>
@@ -299,35 +479,41 @@
 
           <!--========== TECHNOLOGIES ==========-->
           <section class="skills section" id="technologies">
-            <h2 class="section-title">TECHNOLOGIES</h2>
+            <h2 class="section-title">CORE TECHNOLOGIES</h2>
 
             <div class="skills__content bd-grid">
               <ul class="skills__data">
                 <li class="skills__name">
-                  <span class="skills__circle"></span> Laravel 12 (Expert) — PHPStan Level 5
+                  <span class="skills__circle"></span> Laravel 12 / PHP 8.2+ (Expert)
                 </li>
                 <li class="skills__name">
-                  <span class="skills__circle"></span> PostgreSQL (exclusion constraints, FOR UPDATE, advisory locks)
+                  <span class="skills__circle"></span> PostgreSQL 16 (EXCLUDE, FOR UPDATE, advisory locks)
                 </li>
                 <li class="skills__name">
-                  <span class="skills__circle"></span> React 19 / TypeScript (strict mode, feature-sliced)
+                  <span class="skills__circle"></span> React 19 / TypeScript (strict, feature-sliced)
                 </li>
                 <li class="skills__name">
-                  <span class="skills__circle"></span> Redis — caching, queues, cache invalidation
+                  <span class="skills__circle"></span> Redis 7 — cache, queue, session
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> Stripe Cashier + MoMo e-wallet
                 </li>
               </ul>
               <ul class="skills__data">
                 <li class="skills__name">
-                  <span class="skills__circle"></span> Docker multi-stage builds (4-stage frontend)
+                  <span class="skills__circle"></span> Docker / Docker Compose
                 </li>
                 <li class="skills__name">
-                  <span class="skills__circle"></span> Caddy — HSTS, CSP, X-Frame-Options hardening
+                  <span class="skills__circle"></span> GitHub Actions CI/CD (parallel gates)
                 </li>
                 <li class="skills__name">
-                  <span class="skills__circle"></span> Stripe Cashier — webhooks, idempotency
+                  <span class="skills__circle"></span> Caddy — HSTS, CSP, hardening
                 </li>
                 <li class="skills__name">
-                  <span class="skills__circle"></span> GitHub Actions CI/CD — parallelized jobs, tag-based deploy
+                  <span class="skills__circle"></span> PHPStan L5 / Psalm / Pint
+                </li>
+                <li class="skills__name">
+                  <span class="skills__circle"></span> PHPUnit / Vitest / Playwright
                 </li>
               </ul>
             </div>
@@ -344,35 +530,42 @@
                   <span class="experience__line"></span>
                 </div>
                 <div class="experience__data bd-grid">
-                  <h3 class="experience__title">LEAD ENGINEER — BOOKING & AI GOVERNANCE</h3>
+                  <h3 class="experience__title">LEAD ENGINEER — BOOKING PLATFORM &amp; AI HARNESS</h3>
                   <span class="experience__company">
-                    2025 – Present | Soleil Hostel (Independent Project)
+                    2025 – Present | Soleil Hostel (Independent Product)
                   </span>
                   <p class="experience__description">
-                    Designed and built a production-grade hostel booking system
-                    (Laravel 12 + React 19 TypeScript) with a concurrent booking engine:
-                    deadlock-aware retry with SQLSTATE classification, two-phase
-                    Stripe-safe cancellation, PostgreSQL exclusion constraints as
-                    database-level safety net, and TOCTOU race prevention with
-                    FOR UPDATE locking throughout the booking lifecycle.
+                    Sole architect and engineer of a production-grade homestay booking
+                    platform (Laravel 12 + React 19 / TypeScript, PostgreSQL, Redis). Built
+                    a concurrent booking engine that guarantees zero double-booking under
+                    load via a PostgreSQL EXCLUDE overlap constraint, FOR UPDATE pessimistic
+                    locking, optimistic version checks, and TOCTOU-safe restore / refund /
+                    cancellation paths. Shipped dual payments — Stripe Cashier (payment-hold
+                    + durable refund-event idempotency) and MoMo e-wallet (in-app QR,
+                    IPN-confirmed) — each backed by a UNIQUE idempotency ledger that survives
+                    restart and horizontal scaling.
                   </p>
                   <p class="experience__description">
-                    Achieved PHPStan Level 5 with 0 errors and 0 baseline ignores.
-                    Built 1,120 backend tests (3,138 assertions) and 404 frontend tests
-                    across 35 files — including concurrency stress tests, N+1 detection,
-                    optimistic locking conflict verification, and 50-vector XSS purification
-                    coverage. CI pipeline runs 6 parallelized jobs with a booking stress
-                    test and 95% coverage gate enforced on every push.
+                    Held an uncompromising quality bar: 1,789 backend tests (5,740
+                    assertions) and 545 frontend tests, PHPStan Level 5 with 0 errors and no
+                    baseline, Psalm-clean (~90% inferred), and 179/179 findings resolved
+                    across four audit waves. CI runs parallelized gates — tests, static
+                    analysis, OpenAPI contract lint (Spectral), an E2E smoke gate, and a
+                    nightly AI eval that blocks deploys on regression.
                   </p>
                   <p class="experience__description">
-                    Invented a multi-agent AI governance framework: constitutional hierarchy
-                    (CLAUDE.md → ARCHITECTURE_FACTS → CONTRACT → 17 skill files → 6 task
-                    bundles), 4 specialist subagents, 6 executable slash commands, MCP
-                    safety constraints with allowlisted tool access, agent self-learning
-                    with human verification gates, and structured JSONL audit logging.
-                    Operationalized across 30+ reproducible batch sessions with traceable
-                    git history. Authored 13 Architecture Decision Records with full
-                    context, rationale, and alternatives matrices.
+                    Designed and operated the AI Harness (Phases 0–4): a 7-layer safety
+                    pipeline with instant kill switch, canary routing, human-in-the-loop
+                    proposal confirmation (proposer-binding), drift detection, prompt-injection
+                    defense (AI-001), PII hard-block, and HMAC-signed audit trails — governed
+                    by a constitutional agent framework (skill files, MCP safety constraints,
+                    four specialist subagents) and 13+ Architecture Decision Records, and
+                    operationalized across 30+ AI batch sessions with zero regressions and
+                    JSONL-audited, replayable verification. Separately, as an open-source
+                    contributor, forked and extended GitNexus — a code-intelligence
+                    knowledge-graph engine (PHP call-graph resolution, web-agent init,
+                    CI/test infrastructure) — and integrated it as the MCP code-intelligence
+                    layer for blast-radius analysis on Soleil Hostel.
                   </p>
                 </div>
               </div>
@@ -383,7 +576,7 @@
                   <span class="experience__line"></span>
                 </div>
                 <div class="experience__data bd-grid">
-                  <h3 class="experience__title">SELF-DIRECTED BACKEND & AI ENGINEER</h3>
+                  <h3 class="experience__title">SELF-DIRECTED BACKEND &amp; AI ENGINEER</h3>
                   <span class="experience__company">2022 – 2024 | Independent</span>
                   <p class="experience__description">
                     Rebuilt engineering fundamentals from first principles after a career
@@ -429,36 +622,6 @@
                   </p>
                 </div>
               </div>
-            </div>
-          </section>
-
-          <!--========== AI ENGINEERING ==========-->
-          <section class="skills section" id="ai-engineering">
-            <h2 class="section-title">AI ENGINEERING</h2>
-
-            <div class="skills__content bd-grid">
-              <ul class="skills__data">
-                <li class="skills__name">
-                  <span class="skills__circle"></span> Multi-agent governance framework design
-                </li>
-                <li class="skills__name">
-                  <span class="skills__circle"></span> Constitutional hierarchy for AI agent control
-                </li>
-                <li class="skills__name">
-                  <span class="skills__circle"></span> MCP safety constraint architecture (allowlists, denylists)
-                </li>
-              </ul>
-              <ul class="skills__data">
-                <li class="skills__name">
-                  <span class="skills__circle"></span> Domain-specific skill routing (17-skill taxonomy)
-                </li>
-                <li class="skills__name">
-                  <span class="skills__circle"></span> Agent self-learning with human verification gates
-                </li>
-                <li class="skills__name">
-                  <span class="skills__circle"></span> Architecture Decision Records (ADR) practice
-                </li>
-              </ul>
             </div>
           </section>
 

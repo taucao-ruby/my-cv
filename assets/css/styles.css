@@ -650,7 +650,7 @@ img { max-width: 100%; height: auto; display: block; }
 
   .resume {
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
+    grid-template-columns: 0.62fr 1fr;
     background-color: var(--container-color);
     box-shadow:
       0 2px 8px rgba(0, 0, 0, 0.06),

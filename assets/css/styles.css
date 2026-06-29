@@ -534,6 +534,17 @@ img { max-width: 100%; height: auto; display: block; }
 
 .skills__circle { display: none; }
 
+/* Skills pills inside the dark left sidebar — lift contrast off the navy bg */
+.resume__left .skills__name {
+  background-color: rgba(96, 165, 250, 0.12);
+  color: #BFDBFE;
+  border-color: rgba(147, 197, 253, 0.28);
+}
+.resume__left .skills__name:hover {
+  background-color: rgba(96, 165, 250, 0.2);
+  border-color: rgba(147, 197, 253, 0.45);
+}
+
 /*===== LANGUAGES =====*/
 .languages__content {
   display: flex;
